@@ -7,11 +7,36 @@ p hash[:email]
 
 # 2. Make an array of hashes to store the first name and last name for 3 different people. Then print out the first person's info.
 
+people = [
+  {first_name: "Bob",
+  last_name: "Smith"},
+  {first_name: "Sally",
+  last_name: "Ride"},
+  {first_name: "Paul",
+  last_name: "Rudd"}
+]
+
+p people[0][:first_name]
+p people[0][:last_name]
+
 # 3. Make a hash to store prices for 3 different menu items. Then add a new menu item and price and print the hash to see the result.
+
+menu_items = {soda: 5, popcorn: 6, candy: 3}
+menu_items[:fries] = 4
+p menu_items
 
 # 4. Make a hash to store a book's title, author, number of pages, and language. Then print each attribute on separate lines.
 
+books = {title: "Cat in the Hat", author: "Dr Sueus", pages: 25, language: "English"}
+p books[:title]
+p books[:author]
+p books[:pages]
+p books[:language]
+
 # 5. Make an array of hashes to store the title and author for 3 different books. Then print out the third book's author.
+books = [{title: "Cat in the Hat", author: "Dr Sueus"}, {title: "Green Eggs & Ham", author: "Doctor Sueus"}, {title: "3rd Book", author: "3rd Author"}]
+p books[2][:author]
+
 
 # 6. Make a hash to store 3 different states and their captitals. Then add a new state and capital and print the hash to see the result.
 
